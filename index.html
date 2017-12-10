@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  <link rel='stylesheet prefetch' href='css/flipclock.css'>
+  <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="pomodoro">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <p class="sessTitle">SESSION</p>
+        </div>
+        <div class="row counter">
+          <div class="col-md-4">
+            <button class="btn btn-default" id="sessDec">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>        
+          </div>
+          <div class="col-md-2">
+            <div id="session"></div>
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-default" id="sessInc">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <p class="breakTitle">BREAK</p>
+        </div>
+        <div class="row counter">
+          <div class="col-md-4">
+            <button class="btn btn-default" id="breakDec">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="col-md-2">
+            <div id="break"></div>
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-default" id="breakInc">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="clock" class="row">
+      <div class="timer">
+        <div class="middle"></div>
+      </div>
+    </div>
+    <div class="row" id="statRow">
+      <div id="stats"></div>
+    </div>
+    <div class="container">
+      <div class="row" id="btns">
+        <button class="btn btn-default btn-lg" id="stop">
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-default btn-lg" id="start">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-default btn-lg" id="clear">
+          <i class="fa fa-stop" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src='js/jquery.min.js'></script>
+  <script src='js/flipclock.min.js'></script>
+
+  <script  src="js/script.js"></script>
+
+</body>
+</html>
