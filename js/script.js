@@ -1,6 +1,6 @@
 $(document).ready(function() {
   
-  const IMGS_NUMBER = 15
+  const IMGS_NUMBER = 20
 
   let countS = 25
   $('#session').html(countS)
